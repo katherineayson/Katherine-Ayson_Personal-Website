@@ -1,0 +1,170 @@
+body {
+  background-color: #ffffff;
+  padding: 20px 40px 20px 40px;
+}
+
+
+
+/*headings*/
+h1, h2 {
+  font-family: 'DM Serif Text', serif;   
+  line-height: 20px;
+}
+
+td {
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: Mulish, Sans-serif; 	
+}
+
+/*paragraph*/
+p {
+  font-family: Mulish, Sans-serif;
+  font-weight: 200;
+  line-height: 25px;
+  text-align:justify;
+}
+
+
+
+/*"Welcome to my photo gallery..." text*/
+.div1 {
+  width: 20%;
+  float: left;
+  clear: left;
+  margin-right: 30px;
+}
+
+
+
+/*navigation for go back/to top/to gallery*/
+.back {
+  font-family: Mulish, Sans-serif;
+  color: black;
+  font-size: 14px;
+  background: linear-gradient(0deg, gray, gray) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  text-decoration:none;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+  color: inherit;
+  line-height: 2.5;
+}
+
+
+a.back:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+
+
+/*category of photos*/
+.category {
+  width: 70%;
+  float: right;
+  clear:right;
+  margin-right: -20px;
+  margin-left: 50px;
+}
+
+
+
+
+/*format of category photos*/
+.selfiescatclass, .famcatclass, .friendscatclass, .hscatclass, .collegecatclass, .workcatclass, .photogcatclass {
+  vertical-align: middle;
+  float: right;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: no;
+  margin: 10px 10px 10px 10px;
+  object-fit: cover;
+}
+
+
+
+/*format of items (categories) in div "category"*/
+.item {
+  display:inline-block;
+  text-align: center;
+}
+
+
+
+/*low opacity of photo categories*/
+img.selfiescatclass, img.famcatclass, img.friendscatclass, img.hscatclass, img.collegecatclass, img.workcatclass, img.photogcatclass {
+  opacity: 0.5;
+}
+
+ 
+ 
+/*max opacity of photo categories on hover*/
+img:hover.selfiescatclass, img:hover.famcatclass, img:hover.friendscatclass, img:hover.hscatclass, img:hover.collegecatclass, img:hover.workcatclass, img:hover.photog {
+  opacity: 1.0;
+}
+
+
+
+/*category labels under the category pics*/
+.caption{
+  text-align: center;
+  padding-left: 0px;
+}
+
+
+
+/*go back to homepage div under categories*/
+.div3 {
+  float: left;
+  clear: both;
+  padding: 5px 15px 5px 15px;
+  margin-right: 10px;
+}
+
+
+
+/* section div*/
+.selfiesec, .famsec, .friendssec, .hssec, .collegesec, .photogsec {
+  clear: both;
+  text-align: left;
+  padding: 5px 15px 5px 20px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+
+
+/* section photos*/
+.selfieindiv, .famindiv, .hsindiv, .collegeindiv, .photogindiv {
+  vertical-align: middle;
+  width: 280px;
+  height: 280px;
+  border-radius: 10%;
+  margin: 10px 10px 20px 65px;
+  object-fit: cover;
+}
+
+
+
+.friendsindiv {
+  vertical-align: middle;
+  width: 280px;
+  height: 280px;
+  border-radius: 10%;
+  margin: 10px 10px 20px 180px;
+  object-fit: cover;	
+	
+}
+/*anchor format to remove dash*/
+a {
+  text-decoration: none
+}
+
+
