@@ -1,0 +1,68 @@
+
+/*body*/
+body {
+  background-color: #ffffff;
+  padding: 20px 30px 20px 30px;
+}
+
+
+
+/*headings*/
+h1, h2 {
+  font-family: 'DM Serif Text', serif; 
+  line-height: 25px;
+  text-align:justify;
+  padding: 2px;
+}
+
+
+
+/*paragraph*/
+p {
+  font-family: Mulish, Sans-serif;
+  font-weight: 200;
+}
+
+.center {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  padding: 5px 40px 5px 20px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: Mulish, Sans-serif; 	
+  font-weight: 200;
+}
+
+img {
+  vertical-align: middle;
+  width: 280px;
+  height: 280px;
+  border-radius: 10%;
+  margin: 10px;
+  object-fit: cover;
+}
+
+/*navigation for go back/to top/to gallery*/
+.back {
+  font-family: Mulish, Sans-serif;
+  color: black;
+  font-size: 14px;
+  background: linear-gradient(0deg, gray, gray) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  text-decoration:none;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+  color: inherit;
+  line-height: 2.5;
+}
+
+
+a.back:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
